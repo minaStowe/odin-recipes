@@ -1,0 +1,22 @@
+body {
+    color: white;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)), url("https://img.freepik.com/free-photo/starry-night-sky_1048-11828.jpg?w=1380&t=st=1710268574~exp=1710269174~hmac=42f5fa17dd595cae4958785383184e458fdd24841b8dd34b248c0a32555c8ca6");
+    background-color: black;
+    text-align: center;
+}
+
+.titleName {
+    font-family: 'Star Wars', sans-serif;
+    font-size: 100px;
+    letter-spacing: .3rem;
+}
+
+.recipeTitle {
+    font-family: 'Star Wars', sans-serif;
+    font-size: 50px;
+    letter-spacing: .3rem;
+}
+
+.rebelRecipesList {
+    list-style-type: none;
+}
