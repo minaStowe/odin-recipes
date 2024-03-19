@@ -1,6 +1,7 @@
 body {
     color: white;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)), url("https://img.freepik.com/free-photo/starry-night-sky_1048-11828.jpg?w=1380&t=st=1710268574~exp=1710269174~hmac=42f5fa17dd595cae4958785383184e458fdd24841b8dd34b248c0a32555c8ca6");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)), url("https://images.pexels.com/photos/1341279/pexels-photo-1341279.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    );
     background-color: black;
     text-align: center;
 }
@@ -17,6 +18,24 @@ body {
     letter-spacing: .3rem;
 }
 
-.rebelRecipesList {
+ul {
     list-style-type: none;
+}
+
+.flex-container {
+    display: flex;
+}
+
+.flex-container div {
+    color: lightskyblue;
+    height: 100px;
+    flex: 1;
+    padding: 20px;
+}
+
+.container {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
 }
