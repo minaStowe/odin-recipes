@@ -23,12 +23,13 @@ body {
     overflow: hidden;
 }
 
-.x-wing {
-    max-width: 65%;
-    max-height: 65%;
+.x-wing img {
+    max-width: 100%;
+    max-height: auto;
     height: auto;
     overflow: hidden;
     float: right;
+    margin-right: -10% !important;
 
     animation-duration: 4s;
     animation-name: bounce;
@@ -41,8 +42,8 @@ body {
     height: 500px;
     float: left;
     text-align: center;
-    padding-top: 18%;
-    padding-left: 15%;
+    padding-top: 12%;
+    padding-left: 19%;
     font-size: 30px;
     font-family: "Libre Caslon Display", serif;
     font-weight: lighter;
