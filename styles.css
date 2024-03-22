@@ -12,19 +12,43 @@ body {
     letter-spacing: .3rem;
 }
 
-/* .landing-page {
-    float: right !important;
+.landing-page {
     width: 100%;
-    position: relative;
     height: auto;
-    margin-right: -40% !important;
-} */
+    color: white;
+}
 
-/* .landing-page div {
-    width: 80%;
+.landing-page div {
+    height: auto;
     overflow: hidden;
-} */
+}
 
+.x-wing {
+    max-width: 65%;
+    max-height: 65%;
+    height: auto;
+    overflow: hidden;
+    float: right;
+}
+
+.welcome {
+    width: auto;
+    height: 500px;
+    float: left;
+    text-align: center;
+    padding-top: 18%;
+    padding-left: 14%;
+    font-size: 30px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+}
+
+.welcome .greeting {
+    color: #00b4d8;
+    font-family: 'Star Wars', sans-serif;
+    font-size: 25px;
+
+}
 .recipeTitle {
     font-family: 'Star Wars', sans-serif;
     font-size: 50px;
