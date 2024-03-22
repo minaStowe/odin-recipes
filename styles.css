@@ -87,6 +87,10 @@ ul {
     border: 5px solid white;
 }
 
+.recipe-names {
+    padding-bottom: 150px;
+}
+
 a:link
 {
     color:#FFFFFF;
@@ -161,9 +165,17 @@ a:hover
     }
   }
 
+.footer {
+    text-align: center;
+    position: fixed;
+    left: 0px;
+    bottom: 0px;
+    width: 100%;
+}
 
 
-  @keyframes bounce {
+
+@keyframes bounce {
     0% {
         margin-top: 0%;
     }
@@ -173,4 +185,4 @@ a:hover
     100% {
         margin-top: 0%;
     }
-  }
+}
