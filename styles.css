@@ -29,6 +29,11 @@ body {
     height: auto;
     overflow: hidden;
     float: right;
+
+    animation-duration: 4s;
+    animation-name: bounce;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
 }
 
 .welcome {
@@ -151,5 +156,19 @@ a:hover
     }
     .header-right {
       float: none;
+    }
+  }
+
+
+
+  @keyframes bounce {
+    0% {
+        margin-top: 0%;
+    }
+    50% {
+        margin-top: 20px;
+    }
+    100% {
+        margin-top: 0%;
     }
   }
