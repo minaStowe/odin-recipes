@@ -56,6 +56,12 @@ body {
     font-size: 45px;
 
 }
+
+.rebel-logo img {
+    height: auto;
+    width: 100px;
+    padding: 5px;
+}
 .recipeTitle {
     font-family: 'Star Wars', sans-serif;
     font-size: 50px;
@@ -99,12 +105,8 @@ a:link
     text-decoration: none;
 }
 
-a:visited
-{
-    color:#FFFFFF;
-}
-
-a:hover 
+a:visited,
+a:hover
 {
     color:#FFFFFF;
 }
@@ -144,7 +146,8 @@ a:hover
   
   /* Style the active/current link*/
   .header a.active {
-    background-color: dodgerblue;
+    /* background-color: dodgerblue; */
+    background-color: #00b4d8;
     color: white;
   }
   
@@ -173,8 +176,28 @@ a:hover
     width: 100%;
 }
 
+/* ***************** Loading Page ****************** */
+.hyperspace-page {
+    text-align: center;
+    font-family: 'Star Wars', sans-serif;
+    padding-top: 20%;
+    
+}
+.hyperspace-page a button,
+.hyperspace-page a.active,
+.hyperspace-page a.hover {
+    background-color: #00b4d8;
+    font-family: sans-serif;
+    font-weight: bold;
+    text-align: center;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 25px;
+    border-radius: 4px;
+}
 
-
+/* ******************** Animation ******************** */
 @keyframes bounce {
     0% {
         margin-top: 0%;
