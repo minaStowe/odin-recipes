@@ -321,3 +321,26 @@ a:hover
     border-radius: 3px;
     cursor: pointer;
 }
+
+.policy {
+    margin: 20px 0;
+    font-size: 0.8em;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+}
+
+.policy a {
+    text-decoration: none;
+    color: blue;
+    font-size: 0.50em;
+}
+
+.notify {
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.notify > input {
+    margin-right: 5px;
+}
