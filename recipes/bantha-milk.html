@@ -47,7 +47,7 @@
     <div class="comment-container">
         <div class="head"><h1>Post a Comment</h1></div>
         <div><span id="comment">0</span> Comments</div>
-        <div class="text"><p>We are happy to hear from you</p></div>
+        <div class="text"><p>We are happy to hear from you!</p></div>
         <div class="comments"></div>
         <div class="commentbox">
             <img src="/Users/minanguyen/Odin-project/repos/odin-recipes/user1.png" alt="">
@@ -71,5 +71,72 @@
     </div>
 </div>
     <!-- <h4><em>Recipe belongs to Creme De La Crumb</em></h4> -->
+
+
+
+
+    <script>
+        "use strict";
+
+        const userId = {
+            name: null,
+            identity: null,
+            image: null,
+            message: null,
+            date: null
+        }
+
+        const userComment = document.querySelector(".usercomment");
+        const publishBtn = document.querySelector("#publish");
+        const comments = document.querySelector(".comments");
+        const userName = document.querySelector(".user");
+
+        userComment.addEventListener("input", e => {
+            if (!userComment.value) {
+                publishBtn.setAttribute("disabled", "disabled");
+                publishBtn.classList.remove("abled")
+            } else {
+                publishBtn.removeAttribute("disabled");
+                publishBtn.classList.add("abled")
+            }
+        })
+
+
+
+        function addPost() {
+            console.log("The button works!")
+            if (!userComment.value) return;
+            userId.name = userName.value;
+            if(userId.name === "Anonymous"){
+                userId.identity = false;
+                userId.image = "/Users/minanguyen/Odin-project/repos/odin-recipes/anonymous.png";
+            } else {
+                userId.identity = true;
+                userId.image = "/Users/minanguyen/Odin-project/repos/odin-recipes/user.png"
+            }
+
+            userId.message = userComment.value;
+            userId.date = new Date().toLocaleString();
+            let published = 
+            `<div class="parents">
+                <img src="${userId.image}">
+                <div>
+                    <h1>${userId.name}<h1>
+                    <p>${userId.message}</p>
+                    <div class="engagements"><img src="/Users/minanguyen/Odin-project/repos/odin-recipes/like.png"><img src="/Users/minanguyen/Odin-project/repos/odin-recipes/share.png"></div>
+                    <span class="date">${userId.date}</span>
+                </div>
+            </div>`;
+
+            comments.innerHTML += published;
+            userComment.value = "";
+
+            let commentsNum = document.querySelectorAll(".parents").length;
+            document.getElementById("comment").textContent = commentsNum;
+        }
+
+        publishBtn.addEventListener("click", addPost)
+
+    </script>
 </body>
 </html>
